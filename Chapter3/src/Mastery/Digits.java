@@ -15,7 +15,7 @@ public class Digits {
         int number;
 
         //Introduce Scanner class
-        Scanner Number = new Scanner(System.in);
+		Scanner Number = new Scanner(System.in);
 
         //Prompt the user to enter a three digit number
         System.out.println("Enter a three digit number- ");
