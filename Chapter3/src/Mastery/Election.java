@@ -36,7 +36,7 @@ public class Election {
 		// Added DecimalFormat class again to make the percentage shorter in decimal places
 		DecimalFormat voteShorten = new DecimalFormat("#.00");
 		
-		// Displays output
+		// Displays output with shortened percentage 
 		System.out.println("");
 		System.out.println("Candidate        Votes      Percentage");
 		System.out.println(" Awbrey          " + awbTotal + "       " + voteShorten.format(awbPerc));
