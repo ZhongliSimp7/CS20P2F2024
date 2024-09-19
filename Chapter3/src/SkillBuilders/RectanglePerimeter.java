@@ -14,8 +14,8 @@ public class RectanglePerimeter {
 		System.out.print("Please enter the width- ");
 		int width = userInput.nextInt();
 		
-		int area = (length)*(width);
-		System.out.print("The area is " + area);
+		int perimeter = 2*(length) + 2*(width);
+		System.out.print("The perimeter is " + perimeter);
 	}
 
 }

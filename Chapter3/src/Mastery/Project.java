@@ -50,4 +50,22 @@ public class Project {
   }
 }
 
-//Screen Dump required
+/* Screen Dump -
+ 
+  
+Enter the minutes you spent on the following tasks- 
+Designing the code- 100
+Coding- 300
+Debugging the code- 150
+Testing- 50
+
+Task                 % Time
+
+Designing            16.67 %
+Coding               50.00 %
+Debugging            25.00 %
+Testing              8.33 %
+
+
+*/
+
