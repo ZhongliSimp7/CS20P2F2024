@@ -39,8 +39,8 @@ public class Election {
 		// Displays output with shortened percentage 
 		System.out.println("");
 		System.out.println("Candidate        Votes      Percentage");
-		System.out.println(" Awbrey          " + awbTotal + "       " + voteShorten.format(awbPerc));
-		System.out.println(" Martinez        " + marTotal + "       " + voteShorten.format(marPerc));
+		System.out.println(" Awbrey          " + awbTotal + "       " + voteShorten.format(awbPerc) + "%");
+		System.out.println(" Martinez        " + marTotal + "       " + voteShorten.format(marPerc) + "%");
 		System.out.println("");
 		System.out.println("Total Votes- " + (awbTotal+marTotal));
 		
@@ -60,8 +60,8 @@ New Jersey- 5000
 Connecticut- 8000
 
 Candidate        Votes      Percentage
- Awbrey          30000       51.72
- Martinez        28000       48.28
+ Awbrey          30000       51.72%
+ Martinez        28000       48.28%
  
 Total Votes- 58000
 
