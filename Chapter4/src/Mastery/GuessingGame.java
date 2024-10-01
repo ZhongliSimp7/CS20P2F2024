@@ -1,3 +1,16 @@
+/*
+
+Program: GuessingGame.java          Date: September 24th, 2024
+
+
+Purpose: Create a secret number between 1 and 20 which the user tries to guess 
+
+
+School: CHHS
+Course: Computer Science 20
+ 
+*/
+
 package Mastery;
 
 // Scanner class for user input
