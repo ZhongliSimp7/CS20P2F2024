@@ -5,7 +5,9 @@ public class Rectangle {
 	private double length;
 	private double breadth;
 	 
-	
+	 /* 
+	 * 
+	 */
 	
 	 /*
 	 * Changes the length of the rectangle.
@@ -59,5 +61,13 @@ public class Rectangle {
 	 */
 	 public double getBreadth() {
 	 return(breadth); }
+	 
+	  /**
+	  * Displays the formula for the area of a rectangle.
+	  * pre: none
+	  * post: The formula for area of a rectangle has been displayed.*/
+	 public void DisplayAreaFormula() {
+		 System.out.println("The area formula is A = l*b ");
+	 }
 
 }

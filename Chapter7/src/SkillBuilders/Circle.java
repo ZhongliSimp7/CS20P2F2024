@@ -31,15 +31,15 @@ public class Circle {
 	 circumference = PI * radius * radius;
 	 return(circumference); }
 
-	  /**
-	  * Calculates the area of the circle.
-	  * pre: none
-	  * post: The area of the circle has been returned.
-	  */
-	  public double area() {
-	  double circleArea;
-	  circleArea = PI * radius * radius;
-	  return(circleArea); }
+	 /**
+	 * Calculates the area of the circle.
+	 * pre: none
+	 * post: The area of the circle has been returned.
+	 */
+	 public double area() {
+	 double circleArea;
+	 circleArea = PI * radius * radius;
+	 return(circleArea); }
 	 
 	 /*
 	 * Returns the radius of the circle.
@@ -56,5 +56,13 @@ public class Circle {
 	  */
 	  public Circle(double r) {
 	  radius = r; }
+	  
+	  /**
+	  * Displays the formula for the area of a circle.
+	  * pre: none
+	  * post: The formula for area of a circle has been displayed.*/
+	  public void DisplayAreaFormula() {
+		  System.out.println("The area formula for the cirle is A = π*r*r");
+	  }
 }
 	
