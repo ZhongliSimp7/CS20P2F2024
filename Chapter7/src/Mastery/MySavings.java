@@ -10,8 +10,7 @@ public class MySavings {
 	 * post: Savings have been changed.
 	 */
 	 public void AddCoins(double input) {
-	 double savings = input; 
-	 }
+	 double savings = input; }
 	 
 	
 	/*
@@ -20,7 +19,7 @@ public class MySavings {
 	 * post: The total money in the bank has been returned.
 	 */
 	 public double total() {
-	 double total = 0;
+	 double total = savings;
 	 return(total); }
 	
 }
