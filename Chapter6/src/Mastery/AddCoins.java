@@ -17,7 +17,7 @@ import java.util.*;
 
 public class AddCoins {
 
-	public static void getDollarAmount() {
+	public static void getDollarAmount() { 
 		
 		// Declaration and Initiation, preparing for input
 		Scanner Input = new Scanner(System.in);

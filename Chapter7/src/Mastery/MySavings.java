@@ -5,16 +5,16 @@ public class MySavings {
 	private double savings;
 	
 	/*
-	 * Adds money to bank.
+	 * Adds or withdraws money to/from the bank.
 	 * pre: none
 	 * post: Savings have been changed.
 	 */
 	 public void AddCoins(double input) {
-	 double savings = input; }
+	 savings += input; }
 	 
 	
 	/*
-	 * Calculates the total money in the bank.
+	 * Returns the total money in the bank.
 	 * pre: none
 	 * post: The total money in the bank has been returned.
 	 */
