@@ -9,8 +9,8 @@ public class MySavings {
 	 * pre: none
 	 * post: Savings have been changed.
 	 */
-	 public void AddCoins(double input) {
-	 savings += input; }
+	 public void AddCoins(double i) {
+	 savings += i; }
 	 
 	
 	/*
