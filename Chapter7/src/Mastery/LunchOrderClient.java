@@ -5,17 +5,26 @@ public class LunchOrderClient {
 
 	public static void main(String[] args) {
 		
-		// Object here 
+		LunchOrder MyOrder = new LunchOrder(); 
 		Scanner Input = new Scanner(System.in);
 		System.out.println("Welcome to Lunch Order");
+		
 		System.out.print("Enter the number of hamburgers - ");
-		String numHam = Input.next();
+		int numHam = Input.nextInt();
+		MyOrder.Ham(numHam);
+		
 		System.out.print("Enter the number of salads - ");
-		String numSal = Input.next();
+		int numSal = Input.nextInt();
+		MyOrder.Salad(numSal);
+		
 		System.out.print("Enter the number of french fries - ");
-		String numFre = Input.next();
+		int numFre = Input.nextInt();
+		MyOrder.Fries(numFre);
+		
 		System.out.print("Enter the number of sodas - ");
-		String numSod = Input.next();
+		int numSod = Input.nextInt();
+		MyOrder.Soda(numSod);
+		
 		
 		// No loop needed here
 	}

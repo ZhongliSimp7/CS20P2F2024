@@ -61,5 +61,38 @@ public class DigitExtractorClient {
 Screen Dump (2 Test Cases) - 
 
 
+Enter a three-digit number - 123
+Show the (N)umber
+Show the (O)nes place number
+Show the (T)ens place number
+Show the (H)undreds place number
+(Q)uit
+Enter your choice - N
+123
+Enter your choice - O
+3
+Enter your choice - T
+2
+Enter your choice - H
+1
+Enter your choice - Q
+
+
+Enter a three-digit number - 745
+Show the (N)umber
+Show the (O)nes place number
+Show the (T)ens place number
+Show the (H)undreds place number
+(Q)uit
+Enter your choice - N
+745
+Enter your choice - O
+5
+Enter your choice - T
+4
+Enter your choice - H
+7
+Enter your choice - Q
+
 
 */
