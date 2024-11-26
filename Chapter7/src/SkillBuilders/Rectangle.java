@@ -65,5 +65,21 @@ public class Rectangle {
 	 public void DisplayAreaFormula() {
 		 System.out.println("The area formula is A = l*b ");
 	 }
+	 
+	 /**
+	   * Checks to see if two rectangles are equal based on their length and breadth 
+	   * pre: none
+	   * post: Returns true/false 
+	   */
+	 public boolean equals(Object r) {
+		Rectangle testObj = (Rectangle)r;
+		if(testObj.getLength() == length && testObj.getBreadth() == breadth){
+			return true;
+		}
+		else {
+			return false;
+		}
+			
+	}
 
 }

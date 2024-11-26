@@ -64,5 +64,20 @@ public class Circle {
 	  public void DisplayAreaFormula() {
 		  System.out.println("The area formula for the cirle is A = π*r*r");
 	  }
+	  
+	  /**
+	   * Checks to see if two circles are equal based on their radii 
+	   * pre: none
+	   * post: Returns true/false 
+	   */
+	  public boolean equals(Object c) {
+		  Circle testObj = (Circle)c;
+		  if(testObj.getRadius() == radius) {
+			return(true);
+		  }
+		  else {
+		    return(false);
+		  }
+	  }
 }
 	
