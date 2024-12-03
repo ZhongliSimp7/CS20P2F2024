@@ -11,8 +11,18 @@ public class StudentRoster {
 		int number = Input.nextInt();
 		students = new String[number];
 		
-		System.out.println("System Roster");
+		for (int i = 0; i < number; i ++) {
+			System.out.print("Enter the student name - ");
+			String friend = Input.next();
+			students[i] = friend;
+		}
 		
+		System.out.println("");
+		System.out.println("System Roster -");
+		for (int i = 0; i < number; i ++) {
+			System.out.println(students[i]);
+			
+		}
 
 	}
 }
