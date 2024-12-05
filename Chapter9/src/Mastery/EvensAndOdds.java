@@ -33,7 +33,7 @@ public class EvensAndOdds {
 		System.out.println("ODD - ");
 		for (int i = 0; i < 25; i++) {
 			if (numbers[i] % 2 == 1) {
-			System.out.print(numbers[i] + " ");
+				System.out.print(numbers[i] + " ");
 			}
 		}
 			
@@ -43,7 +43,7 @@ public class EvensAndOdds {
 		System.out.println("EVEN - ");
 		for (int i = 0; i < 25; i++) {
 			if (numbers[i] % 2 == 0) {
-			System.out.print(numbers[i] + " ");
+				System.out.print(numbers[i] + " ");
 			}
 		}
 	}
