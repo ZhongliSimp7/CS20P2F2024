@@ -14,7 +14,7 @@ public class CountLetters {
 		int offset; //array index
 		/* prompt user for a word */
 		System.out.print("Enter a word: ");
-		word = Input.nextLine();
+		word = Input.nextLine().replaceAll(" ", "");
 		
 		 /* convert word to char array and count letter occurrences */
 		word = word.toUpperCase();
