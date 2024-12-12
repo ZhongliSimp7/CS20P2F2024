@@ -20,24 +20,27 @@ public class CourseGrades {
 	public static void main(String[] args) {
 		
 		Scanner Input = new Scanner(System.in);
-		int [][] GradeBook = new int[5][12];
-		GradeBook book = new GradeBook();
+		// Create an object book with 5 rows and 12 columns (tests/students)
+		GradeBook book = new GradeBook(5, 12);
 		
-		// Get grades
-		for (int i = 0; i < GradeBook.length; i++) {
-            for (int j = 0; j < GradeBook[0].length ; j++) {
-            	System.out.print("Enter student " + (j+1) + " grades for course " + (i+1) + " - ");
-            	int x = Input.nextInt();
-            	GradeBook[i][j] = x;
-            }
-          System.out.println("");
-        }
-		
+		// Input the grades
+		book.getGrades();
+		// Shows the grade array
 		book.showGrades();
 		
-		System.out.print("Enter student number to see average - ");
+		System.out.println("");
 		
+		// Shows average grades of a student
+		System.out.print("Enter student number to see average - ");
+		int student = Input.nextInt();
+		book.studentAvg(student);
+		
+		System.out.println(" ");
+		
+		// Shows average grades for a test
 		System.out.print("Enter test number to see average - ");
+		int test = Input.nextInt();
+		book.testAvg(test);
 		
 	}
 }
@@ -47,5 +50,40 @@ public class CourseGrades {
 Screen Dump (2 Test Cases) - 
 
 
+Enter student 1 grades for test 1 - 20
+Enter student 2 grades for test 1 - 30
+
+Enter student 1 grades for test 2 - 30
+Enter student 2 grades for test 2 - 40
+
+Enter student 1 grades for test 3 - 40
+Enter student 2 grades for test 3 - 50
+
+20 30 
+30 40 
+40 50 
+
+Enter student number to see average - 1
+Student 1 average is 30.0 
+Enter test number to see average - 2
+Test 2 average is 35.0
+
+---------------------------------------
+
+Enter student 1 grades for test 1 - 20
+Enter student 2 grades for test 1 - 30
+Enter student 3 grades for test 1 - 40
+
+Enter student 1 grades for test 2 - 40
+Enter student 2 grades for test 2 - 50
+Enter student 3 grades for test 2 - 60
+
+20 30 40 
+40 50 60 
+
+Enter student number to see average - 1
+Student 1 average is 30.0 
+Enter test number to see average - 2
+Test 2 average is 50.0
 
 */
