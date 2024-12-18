@@ -28,7 +28,37 @@ public class Thermostat {
         TemperatureSensor temperatureSensor = new TemperatureSensor();
         temperatureSensor.open(1000);
         
+        double waitTime = 10;
         
+        int setTemp = 21;
+        while(true) {
+        	if (greenButton.getState() == true) {
+        		setTemp++;
+        		System.out.println("Set temperature: " + setTemp + " °C" );
+        	}
+        	else if (redButton.getState() == true) {
+        		setTemp--;
+        		System.out.println("Set temperature: " + setTemp + " °C" );
+        	}
+
+        	if (waitTime >= 10) {
+        		System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
+        		waitTime = 0;
+        	} 
+        	
+        	waitTime += 0.1;
+        	
+        	if (temperatureSensor.getTemperature() < (setTemp + 2) && temperatureSensor.getTemperature() > (setTemp - 2)) {
+        		greenLED.setState(true);
+        		redLED.setState(false);
+        	}
+        	else {
+        		redLED.setState(true);
+        		greenLED.setState(false);
+        	}
+        	
+        	Thread.sleep(100);
+        }
         
     }   
 }
